@@ -4,7 +4,9 @@ const config = require('./config');
 const youTube = new YouTube();
 
 youTube.setKey(config.key);
-youTube.getById('HcwTxRuq-uk,vIu85WQTPRc', (error, result) => {
+
+// Get "Marvel Entertainment" channel
+youTube.getChannelById('UCvC4D8onUfXzvjTOM-dBfEA', (error, result) => {
   if (error) {
     console.log(error);
   } else {
